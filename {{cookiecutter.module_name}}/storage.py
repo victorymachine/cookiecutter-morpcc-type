@@ -7,7 +7,7 @@ from .model import {{ cookiecutter.type_name }}Model
 
 class {{ cookiecutter.type_name }}(morpfw.sql.Base):
 
-    __tablename__ = 'democms_page'
+    __tablename__ = '{{ cookiecutter.type_name }}'
 
     title = sa.Column(sa.String(length=1024))
     description = sa.Column(sa.Text())
